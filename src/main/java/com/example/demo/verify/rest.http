@@ -1,0 +1,29 @@
+get  http://localhost:8080/usuario
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicHJ1ZWJhQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NDIyODM1NzksImV4cCI6MTY0MjI4NDE3OX0.aT3PkMuZJG0H-WmDXdWG8lp95I_2c4iHenNM7swdrRX7-6LBkfg7rJJXS5GZF4DW--5NQAd-NtUnj6Rg8HsOkg
+
+###
+
+get  http://localhost:8080/usuario/3
+###
+
+POST http://localhost:8080/usuario
+Content-Type: application/json
+
+{
+    "id":7,
+    "nombre":"Pablo Medina numero 7",
+    "email":"prueba@gmail.com",
+    "prioridad":"2"
+}
+###
+
+DELETE http://localhost:8080/usuario/5
+###
+
+POST http://localhost:8080/usuario/login?email=prueba@gmail.com&password=abc
+
+Content-Type: application/json
+{  
+    "email":"prueba2@gmail.com",
+    "password":"abc"
+}
